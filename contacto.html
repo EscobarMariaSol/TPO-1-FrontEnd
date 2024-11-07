@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Contactarnos</title>
+  <title>Contactanos</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/contacto-styles.css" rel="stylesheet"/>
@@ -11,83 +11,85 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                  Logo de la página
+        <div class="container.fluid bg-success fixed-top d-flex align-content-stretch align-items-baseline py-3">
+            <div id="logo_div" class="container">
+              <a class="navbar-brand" href="index.html">
+                  <img id="logo_header" src="imges/logo.jpg" alt="Logo" class="rounded-pill">
               </a>
-              <nav class="navbar navbar-expand-sm bg-secondary navbar-light mx-auto">
-                  <div class="container-fluid">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Tienda</a>
-                      </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tutoriales</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Menú</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Trabaja con nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Franquicias</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Contacto</a>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
+            </div>
+            <div id="menu_div" class="container">
+              <nav class="navbar-expand bg-success">
+                <div class="container">
+                  <ul class="navbar-nav">
+                    <li class="nav-item p-2">
+                      <a class="nav-link" href="#"><h6 class="text-light">Tienda</h6></a>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a class="nav-link" href="#"><h6 class="text-light">Tutoriales</h6></a>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a class="nav-link" href="#"><h6 class="text-light">Menú</h6></a>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a class="nav-link" href="#"><h6 class="text-light">Trabaja con nosotros</h6></a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#"><h6 class="text-light">Franquicias</h6></a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#"><h6 class="text-light">Contacto</h6></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
             </div>
           </nav>
     </header>
     <main>
         <div id= "main_div" class="container-fluid p-5 my-5 d-flex flex-row">
-            <div id="form-div" class="container-fluid py-5 mx-1 border d-flex flex-column">
-                <h2>COMUNICATE CON NOSOTROS</h2>
-                <p>
-                    Ante cualquier consulta no dudes en comunicarte. 
-                    Dejá tus datos y consulta utilizando el formulario a continuación y nos contactaremos a la brevedad.
-                </p>
-                <form action="#">
-                    <div class="mb-3 mt-3">
-                        <label for="nombre" class="form-label">Nombre:</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre" required>
-                      </div>
-                    <div class="mb-3 mt-3">
-                        <label for="email" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
+          <div id="form-div" class="container-fluid py-5 mx-1 border d-flex flex-column">
+              <h2>COMUNICATE CON NOSOTROS</h2>
+              <p>
+                  Ante cualquier consulta no dudes en comunicarte. 
+                  Dejá tus datos y consulta utilizando el formulario a continuación y nos contactaremos a la brevedad.
+              </p>
+              <form action="#">
+                  <div class="mb-3 mt-3">
+                      <label for="nombre" class="form-label">Nombre:</label>
+                      <input type="text" class="form-control" id="nombre" name="nombre" required>
                     </div>
-                    <div class="mb-3">
-                      <label for="asunto" class="form-label">Asunto:</label>
-                      <input type="text" class="form-control" id="asunto" name="asunto">
-                    </div>
-                    <div class="mb-3 mt-3">
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea class="form-control" rows="5" id="mensaje" name="mensaje"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-success">Enviar</button>
-                </form>    
-            </div>
-            <div id="redes-div" class="container-fluid p-5 border d-flex flex-column">
-                <h2>Nuestras redes sociales</h2>
-                <a href="#" class="mt-3"><img src="img/contacto-img/icono_fb.png" alt=""></a>
-                <a href="#" class="mt-3"><img src="img/contacto-img/icono_insta.png" alt=""></a>
-            </div>
-        </div>
+                  <div class="mb-3 mt-3">
+                      <label for="email" class="form-label">Email:</label>
+                      <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="asunto" class="form-label">Asunto:</label>
+                    <input type="text" class="form-control" id="asunto" name="asunto">
+                  </div>
+                  <div class="mb-3 mt-3">
+                      <label for="mensaje">Mensaje:</label>
+                      <textarea class="form-control" rows="5" id="mensaje" name="mensaje"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-dark w-25">Enviar</button>
+              </form>    
+          </div>
+          <div id="redes-div" class="container-fluid p-5 border d-flex flex-column">
+              <h2>Nuestras redes sociales</h2>
+              <a href="#" class="mt-3"><img src="imges/icono_fb.png" alt=""></a>
+              <a href="#" class="mt-3"><img src="imges/icono_insta.png" alt=""></a>
+          </div>
+      </div>
     </main>
     <footer>
-      <div class="container-fluid bg-secondary border text-white d-flex justify-content-between">
-        <div id="logo-div" class="container py-3 ms-3">
-          <a class="navbar-brand" href="#">
-            Logo de la página
+      <div class="container-fluid bg-success border text-white d-flex justify-content-between">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo_footer" src="imges/logo.jpg" alt="Logo" class="rounded-pill">
           </a>
         </div>
         <div id="contenido-div" class="container py-3">
           <h4>Contenidos</h4>
-          <nav class="navbar bg-secondary">
+          <nav class="navbar bg-success">
             <div class="container-fluid">
               <ul class="navbar-nav">
                 <li class="nav-item">
@@ -105,7 +107,7 @@
         </div>
         <div id="ayuda-div" class="container py-3">
           <h4>Necesitás ayuda</h4>
-          <nav class="navbar bg-secondary">
+          <nav class="navbar bg-success">
             <div class="container-fluid">
               <ul class="navbar-nav">
                 <li class="nav-item">
@@ -128,7 +130,12 @@
           <h4>Suscribete a nuestro newsletter</h4>
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Tu email">
-            <button class="btn btn-success" type="submit">Suscribirme</button>
+            <button class="btn btn-dark" type="submit">Suscribirme</button>
+        </div>
+        <div id="redes-div" class="container py-3">
+          <h5>Nuestras redes</h5>
+          <a href="#" class="m-1"><img src="imges/icono_fb.png" alt=""></a>
+          <a href="#" class="m-1"><img src="imges/icono_insta.png" alt=""></a>
         </div>
       </div>
     </footer>
