@@ -46,19 +46,53 @@
           </nav>
     </header>
     <main>
-        <div id= "main_div" class="container-fluid p-5 my-5 d-flex flex-row">
-            
+        <div id= "main_div" class="container-fluid p-3">
+            <div id="titulo_div">
+              <h5 class="text-center pt-5 text-success">Sumate a nuestro equipo</h5>
+              <hr class="border-success border-2">
+              <h2 class="text-center pt-1"> Trabajá en Tea Shop</h2>
+              <hr class="border-success border-2">
+              <p class="text-muted text-center">Si queres formar parte de Tea Shop dejanos tus datos y adjunta tu CV.</p>
+            </div>
+            <div id="formulario_div" class="container.fluid py-3">
+              <form>
+                <div class="row">
+                  <div class="col">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" required>
+                    <label for="email" class="form-label pt-3">Email</label>
+                    <input type="text" class="form-control" name="email" required>
+                    <label for="puesto" class="form-label pt-3">¿Cual es tu puesto de trabajo?</label>
+                    <input type="text" class="form-control" name="puesto">
+                  </div>
+                  <div class="col">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" name="apellido" required>
+                    <label for="telefono" class="form-label pt-3">Teléfono</label>
+                    <input type="text" class="form-control" name="telefono" required>
+                    <label for="cv" class="form-label pt-3">Adjunta tu CV:</label>
+                    <input type="file" id="cv" name="cv" class="form-control">
+                  </div>
+                </div>
+                <div class="">  
+                  <label for="mensaje" class="form-label pt-3">Mensaje</label>
+                  <textarea class="form-control w-100" rows="5" id="mensaje" name="mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success my-3 w-25">Enviar</button>
+              </form>
+
+            </div>
         </div>
     </main>
     <footer>
       <div class="container-fluid bg-success border text-white d-flex justify-content-between">
-        <div class="container">
+        <div class="container align-content-center">
           <a class="navbar-brand" href="index.html">
             <img id="logo_footer" src="imges/logo.jpg" alt="Logo" class="rounded-pill">
           </a>
         </div>
         <div id="contenido-div" class="container py-3">
-          <h4>Contenidos</h4>
+          <h4 class="text-muted">Contenidos</h4>
           <nav class="navbar bg-success">
             <div class="container-fluid">
               <ul class="navbar-nav">
@@ -76,7 +110,7 @@
           </nav>
         </div>
         <div id="ayuda-div" class="container py-3">
-          <h4>Necesitás ayuda</h4>
+          <h4 class="text-muted">Necesitás ayuda</h4>
           <nav class="navbar bg-success">
             <div class="container-fluid">
               <ul class="navbar-nav">
@@ -97,10 +131,15 @@
           </nav>
         </div>
         <div id="ayuda-div" class="container py-3 me-3">
-          <h4>Suscribete a nuestro newsletter</h4>
+          <h4 class="text-muted">Suscribete a nuestro newsletter</h4>
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Tu email">
-            <button class="btn btn-success" type="submit">Suscribirme</button>
+            <button class="btn btn-dark" type="submit">Suscribirme</button>
+        </div>
+        <div id="redes-div" class="container py-3">
+          <h5 class="text-muted">Nuestras redes</h5>
+          <a href="#" class="m-1"><img src="imges/icono_fb.png" alt=""></a>
+          <a href="#" class="m-1"><img src="imges/icono_insta.png" alt=""></a>
         </div>
       </div>
     </footer>
