@@ -10,75 +10,241 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <header>
-        <div class="container.fluid bg-success fixed-top d-flex align-content-stretch align-items-baseline py-3">
-            <div id="logo_div" class="container">
-              <a class="navbar-brand" href="index.html">
-                  <img id="logo_header" src="imges/logo.jpg" alt="Logo" class="rounded-pill">
+    <header class="position-fixed top-0 start-0 w-100 bg-success py-3" style="z-index: 1030;">
+        <div class="container-fluid d-flex align-items-baseline">
+          <div id="logo_div" class="container">
+            <a class="navbar-brand" href="index.html">
+              <img id="logo_header" src="imges/logo.jpg" alt="Logo" class="rounded-pill">
+            </a>
+          </div>
+          <div id="menu_div" class="container">
+            <nav class="navbar navbar-expand bg-success">
+              <div class="container">
+                <ul class="navbar-nav">
+                  <li class="nav-item p-2"><a class="nav-link text-light" href="tienda.html"><h6>Nuestro Té</h6></a></li>
+                  <li class="nav-item p-2"><a class="nav-link text-light" href="tutoriales.html"><h6>Tutoriales</h6></a></li>
+                  <li class="nav-item p-2"><a class="nav-link text-light" href="menu-tienda.html"><h6>Menú</h6></a></li>
+                  <li class="nav-item p-2"><a class="nav-link text-light" href="trabaja-con-nosotros.html"><h6>Trabaja con nosotros</h6></a></li>
+                  <li class="nav-item p-2"><a class="nav-link text-light" href="franquicias.html"><h6>Franquicias</h6></a></li>
+                  <li class="nav-item p-2"><a class="nav-link text-light" href="contacto.html"><h6>Contacto</h6></a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+    <main>
+        <!-- CAROUSEL -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="margin-top: 70px; height: 80vh;">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <img src="/imges/carousel_img/proceso te.jpg" class="d-block w-100 h-100" alt="serve tea">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-4 rounded">
+                  <h1>Tu té preferido</h1>
+                  <h1><strong>SIEMPRE CERCA</strong></h1>
+                  <p>Blends, varietales, tés del mundo.</p>
+                  <p>Encontrá tu Tienda más cercana y tentate con nuestros sabores.</p>
+                  <a href="/franquicias.html"><button type="button" class="btn btn-outline-light">ENCONTRANOS</button></a>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="/imges/carousel_img/muestra de te.jpg" class="d-block w-100 h-100" alt="tea product">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-4">
+                    <h1>Probá nuestros</h1>
+                    <h1><strong>BLENDS</strong></h1>
+                    <p>Packaging 100% reciclados y recuperables.</p>
+                    <a href="tienda.html"><button type="button" class="btn btn-outline-light">DESCUBRILAS</button></a>
+                  
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="/imges/carousel_img/hojas de te.jpg" class="d-block w-100 h-100" alt="leaf tea">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-4">
+                    <h1>Desde 2007</h1>
+                    <h1><strong>SELECCIONANDO TUS BLENDS</strong></h1>
+                    <p>Años de experiencia cuidando cada parte del proceso.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+         <!-- PRODUCTOS -->
+          <div class="container-fluid py-5 my-3 d-flex justify-content-center flex-wrap">
+            <h1>NUESTROS PRODUCTOS</h1>
+            <div id="main_div" class="container-fluid my-1 d-flex justify-content-center flex-wrap">
+                <div class="row w-100">
+                    <div class="col-12 col-md-4 col-lg-2 d-flex justify-content-center">
+                        <div class="card m-4 d-flex flex-column align-items-center">
+                          <img class="card-img-top h-50" src="imges/variedad_te/te_verde.jpg" alt="Té verde">
+                          <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                            <h4 class="card-title text-center">Té Verde</h4>
+                            <a href="tienda.html" class="btn btn-outline-success w-100">Comprar</a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                  <div class="col-12 col-md-4 col-lg-2 d-flex justify-content-center">
+                    <div class="card m-4 d-flex flex-column align-items-center">
+                      <img class="card-img-top h-50" src="imges/variedad_te/te_blanco.jpg" alt="Té blanco">
+                      <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                        <h4 class="card-title text-center">Té Blanco</h4>
+                        <a href="tienda.html" class="btn btn-outline-success w-100">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2 d-flex justify-content-center">
+                    <div class="card m-4 d-flex flex-column align-items-center">
+                      <img class="card-img-top h-50" src="imges/variedad_te/te_oolong.jpg" alt="Té Oolong">
+                      <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                        <h4 class="card-title text-center">Té Oolong</h4>
+                        <a href="tienda.html" class="btn btn-outline-success w-100">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2 d-flex justify-content-center">
+                    <div class="card m-4 d-flex flex-column align-items-center">
+                      <img class="card-img-top h-50" src="imges/variedad_te/te_puerh.webp" alt="Té Pu-Erh">
+                      <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                        <h4 class="card-title text-center">Té Pu-Erh</h4>
+                        <a href="tienda.html" class="btn btn-outline-success w-100">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2 d-flex justify-content-center">
+                    <div class="card m-4 d-flex flex-column align-items-center">
+                      <img class="card-img-top h-50" src="imges/variedad_te/te_negro.jpg" alt="Té Negro">
+                      <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                        <h4 class="card-title text-center">Té Negro</h4>
+                        <a href="tienda.html" class="btn btn-outline-success w-100">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2 d-flex justify-content-center">
+                    <div class="card m-4 d-flex flex-column align-items-center">
+                      <img class="card-img-top h-50" src="imges/variedad_te/te_matcha.jpg" alt="Té Matcha">
+                      <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                        <h4 class="card-title text-center">Té Matcha</h4>
+                        <a href="tienda.html" class="btn btn-outline-success w-100">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+         <!-- TUTO y MENU -->
+         <div class="container">
+            <div class="row g-5">
+              <!-- TUTO tarjeta -->
+              <div class="col-12 col-sm-4 col-md-6">
+                <div class="card text-bg-dark h-100">
+                  <img src="/imges/carousel_img/specias.jpg" class="card-img" alt="spices" style="object-fit: cover;">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
+                    <h5 class="card-title text-dark bg-light d-inline-block p-1">Aprendé a preparar el té como un experto</h5>
+                    <h1 class="card-text"><strong>SECRETOS DEL TE</strong></h1>
+                    <a href="/tutoriales.html">
+                        <button type="button" class="btn btn-dark btn-sm p-2">
+                          VER
+                        </button>
+                      </a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- MENU tarjeta -->
+              <div class="col-12 col-sm-4 col-md-6">
+                <div class="card text-bg-dark h-100">
+                  <img src="/imges/carousel_img/resto.png" class="card-img" alt="menu" style="object-fit: cover;">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
+                    <h5 class="card-title text-dark bg-light d-inline-block p-1">Conocé todo lo que podés encontrar en nuestros locales.</h5>
+                    <h1 class="card-text"><strong>NUESTROS PLATOS</strong></h1>
+                    <a href="/menu-tienda.html">
+                        <button type="button" class="btn btn-dark btn-sm p-2">
+                          VER
+                        </button>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NUESTRO TE -->
+           <div class="bg-light py-5 my-3">
+            <!-- titulo -->
+            <div class="container-fluid py-5 my-3 text-center">
+                <p class="text-success">NUESTRO TÉ</p>
+                <h1>¿CUÁL VAS A ELEGIR HOY?</h1>
+            </div>
+            <div class="container">
+                <div class="row g-3 d-flex"> 
+                    <!-- Columna 1 (alinee derecha) -->
+                    <div class="col-12 col-md-2 d-flex flex-column ms-auto align-items-end">
+                        <div class="text-success">
+                            <h5>TÉ VERDE</h5>
+                            <p>
+                                Se lo considera favorecedor de la recuperación muscular después de la actividad física y adicionalmente ayuda a quemar grasas.</p>
+                        </div>
+                        <div class="text-success">
+                            <h5>TÉ BLANCO</h5>
+                            <p>El té blanco viene de delicadas yemas y hojas jóvenes de la planta Camellia sinensis, proveniente de la provincia china de Fujian.</p>
+                        </div>
+                        <div class="text-success">
+                            <h5>TÉ OOLONG</h5>
+                            <p>El té oolong, también conocido como té azul, es un té chino tradicional (Camellia sinensis) que queda entre el verde y el negro en oxidación, 
+                                lo cual le da un característico tono azulado.</p>
+                        </div>
+                    </div>
+            
+                    <!-- Imagen -->
+                    <div class="col-12 col-md-8">
+                        <img src="/imges/carousel_img/v2-6shlm-4fbnh.jpg" class="w-100" alt="Té">
+                    </div>
+            
+                    <!-- Columna 2 (alineada a la izquierda) -->
+                    <div class="col-12 col-md-2 d-flex flex-column align-items-start">
+                        <div class="text-success">
+                            <h5>TÉ PU - ERH</h5>
+                            <p>También es conocido en Occidente como té rojo y su nombre proviene de la región de Pu'er.</p>
+                        </div>
+                        <div class="text-success">
+                            <h5>TÉ NEGRO</h5>
+                            <p>El té negro es un té que se encuentra oxidado en mayor grado que las variedades de té verde,
+                                por lo que generalmente posee un aroma más fuerte y contiene más cafeína que los anteriores.</p>
+                        </div>
+                        <div class="text-success">
+                            <h5>TÉ MATCHA</h5>
+                            <p>Matcha es un tipo de té verde japonés finamente molido elaborado con tencha, el material resultante del procesado de las hojas de la primera cosecha.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                 
+         </div>
+
+         <!-- ULTIMA CARD -->
+         <div class="card text-bg-dark">
+            <img src="/imges/carousel_img/parvis-3.jpg" class="card-img" alt="salon">
+            <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center" style="background: rgba(0, 0, 0, 0.5);">
+              <h1 class="card-title">SIEMPRE HAY UN</h1>
+              <h1 class="card-text"><strong>TECITO CERCA TUYO</strong></h1>
+              <h3 class="card-text">Encontrá nuestra sucursal más cercana.</h3>
+              <a href="/franquicias.html">
+                <button type="button" class="btn btn-outline-light">ENCONTRANOS</button>
               </a>
             </div>
-            <div id="menu_div" class="container">
-              <nav class="navbar-expand bg-success">
-                <div class="container">
-                  <ul class="navbar-nav">
-                    <li class="nav-item p-2">
-                      <a class="nav-link" href="tienda.html"><h6 class="text-light">Nuestro Té</h6></a>
-                    </li>
-                    <li class="nav-item p-2">
-                      <a class="nav-link" href="tutoriales.html"><h6 class="text-light">Tutoriales</h6></a>
-                    </li>
-                    <li class="nav-item p-2">
-                      <a class="nav-link" href="menu-tienda.html"><h6 class="text-light">Menú</h6></a>
-                    </li>
-                    <li class="nav-item p-2">
-                      <a class="nav-link" href="trabaja-con-nosotros.html"><h6 class="text-light">Trabaja con nosotros</h6></a>
-                    </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link" href="franquicias.html"><h6 class="text-light">Franquicias</h6></a>
-                    </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link" href="contacto.html"><h6 class="text-light">Contacto</h6></a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </nav>
-    </header>
-    <main>
-        <div id= "main_div" class="container-fluid p-5 my-5 d-flex flex-row">
-          <div id="form-div" class="container-fluid py-5 mx-1 border d-flex flex-column">
-              <h2>COMUNICATE CON NOSOTROS</h2>
-              <p>
-                  Ante cualquier consulta no dudes en comunicarte. 
-                  Dejá tus datos y consulta utilizando el formulario a continuación y nos contactaremos a la brevedad.
-              </p>
-              <form action="#">
-                  <div class="mb-3 mt-3">
-                      <label for="nombre" class="form-label">Nombre:</label>
-                      <input type="text" class="form-control" id="nombre" name="nombre" required>
-                    </div>
-                  <div class="mb-3 mt-3">
-                      <label for="email" class="form-label">Email:</label>
-                      <input type="email" class="form-control" id="email" name="email" required>
-                  </div>
-                  <div class="mb-3">
-                    <label for="asunto" class="form-label">Asunto:</label>
-                    <input type="text" class="form-control" id="asunto" name="asunto">
-                  </div>
-                  <div class="mb-3 mt-3">
-                      <label for="mensaje">Mensaje:</label>
-                      <textarea class="form-control" rows="5" id="mensaje" name="mensaje"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-dark w-25">Enviar</button>
-              </form>    
           </div>
-          <div id="redes-div" class="container-fluid p-5 border d-flex flex-column">
-              <h2>Nuestras redes sociales</h2>
-              <a href="#" class="mt-3"><img src="imges/icono_fb.png" alt=""></a>
-              <a href="#" class="mt-3"><img src="imges/icono_insta.png" alt=""></a>
-          </div>
-      </div>
+          
+          
+          
+          
+          
     </main>
     <footer>
       <div class="container-fluid bg-success border text-white d-flex justify-content-between">
