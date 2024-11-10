@@ -23,3 +23,15 @@ main {
 #menu-div {
   width: 95%;
 }
+
+.img-size {
+  height: 300px;
+  object-fit: cover;
+}
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+.card-title,
+.btn-link {
+  text-align: center;
+}
