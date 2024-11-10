@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Contactanos</title>
+  <title>Franquicias</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/styles.css" rel="stylesheet"/>
@@ -10,31 +10,75 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <header class="position-fixed top-0 start-0 w-100 bg-success py-3" style="z-index: 1030;">
-        <div class="container-fluid d-flex align-items-baseline">
-          <div id="logo_div" class="container">
-            <a class="navbar-brand" href="index.html">
-              <img id="logo_header" src="imges/logo.jpg" alt="Logo" class="rounded-pill">
-            </a>
-          </div>
-          <div id="menu_div" class="container">
-            <nav class="navbar navbar-expand bg-success">
-              <div class="container">
-                <ul class="navbar-nav">
-                  <li class="nav-item p-2"><a class="nav-link text-light" href="tienda.html"><h6>Nuestro Té</h6></a></li>
-                  <li class="nav-item p-2"><a class="nav-link text-light" href="tutoriales.html"><h6>Tutoriales</h6></a></li>
-                  <li class="nav-item p-2"><a class="nav-link text-light" href="menu-tienda.html"><h6>Menú</h6></a></li>
-                  <li class="nav-item p-2"><a class="nav-link text-light" href="trabaja-con-nosotros.html"><h6>Trabaja con nosotros</h6></a></li>
-                  <li class="nav-item p-2"><a class="nav-link text-light" href="franquicias.html"><h6>Franquicias</h6></a></li>
-                  <li class="nav-item p-2"><a class="nav-link text-light" href="contacto.html"><h6>Contacto</h6></a></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </header>
+    <header>
+        <div class="container.fluid bg-success fixed-top d-flex align-content-stretch align-items-baseline py-3">
+            <div id="logo_div" class="container">
+              <a class="navbar-brand" href="index.html">
+                  <img id="logo_header" src="imges/logo.jpg" alt="Logo" class="rounded-pill">
+              </a>
+            </div>
+            <div id="menu_div" class="container">
+              <nav class="navbar-expand bg-success">
+                <div class="container">
+                  <ul class="navbar-nav">
+                    <li class="nav-item p-2">
+                      <a class="nav-link" href="tienda.html"><h6 class="text-light">Nuestro Té</h6></a>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a class="nav-link" href="tutoriales.html"><h6 class="text-light">Tutoriales</h6></a>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a class="nav-link" href="menu-tienda.html"><h6 class="text-light">Menú</h6></a>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a class="nav-link" href="trabaja-con-nosotros.html"><h6 class="text-light">Trabaja con nosotros</h6></a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="franquicias.html"><h6 class="text-light">Franquicias</h6></a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="contacto.html"><h6 class="text-light">Contacto</h6></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </nav>
+    </header>
     <main>
-        
+        <div id= "main_div" class="container-fluid p-3">
+            <div id="titulo_div">
+              <h5 class="text-center pt-5 text-success">Conocé todas las opciones</h5>
+              <hr class="border-success border-2">
+              <h2 class="text-center pt-1">Convertite en franquiciado</h2>
+              <hr class="border-success border-2">
+              <p class="text-muted text-center">Querés ser parte de este equipo? Dejanos tus datos para recibir mas información, y nos pondremos en contacto para contarte todas las posibilidades de tu próxima franquicia TEA SHOP!</p>
+            </div>
+            <div id="formulario_div" class="container.fluid py-3">
+              <form>
+                <div class="row">
+                  <div class="col">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" required>
+                    <label for="email" class="form-label pt-3">Email</label>
+                    <input type="text" class="form-control" name="email" required>
+                    <label for="puesto" class="form-label pt-3">¿Cómo llegaste a nosotros?</label>
+                    <input type="text" class="form-control" name="como-llegaste">
+                  </div>
+                  <div class="col">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" name="apellido" required>
+                    <label for="telefono" class="form-label pt-3">Teléfono</label>
+                    <input type="text" class="form-control" name="telefono" required>
+                    <label for="telefono" class="form-label pt-3">¿En qué zona te gustaría instalar la franquicia?</label>
+                    <input type="text" class="form-control" name="zona" required>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-success my-3 w-25">Enviar</button>
+              </form>
+
+            </div>
+        </div>
     </main>
     <footer>
       <div class="container-fluid bg-success border text-white d-flex justify-content-between">
