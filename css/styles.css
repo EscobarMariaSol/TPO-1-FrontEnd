@@ -1,0 +1,37 @@
+main {
+  margin-top: 10%;
+}
+
+#logo_header {
+  width: 20%;
+}
+
+#logo_footer {
+  width: 50%;
+}
+
+#header-div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+#logo-div {
+  width: 5%;
+}
+
+#menu-div {
+  width: 95%;
+}
+
+.img-size {
+  height: 300px;
+  object-fit: cover;
+}
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+.card-title,
+.btn-link {
+  text-align: center;
+}
